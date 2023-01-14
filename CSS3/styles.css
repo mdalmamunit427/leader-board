@@ -214,3 +214,56 @@ hr {
     line-height: 20px;
     font-weight: 600;
 }
+
+/* Media Query */
+/* for smartphone */
+@media screen and (max-width:576px) {
+    .container {
+        width: 90%;
+    }
+
+    .menu-bar{
+        display: none;
+    }
+    .top-players, .top-blogs{
+        grid-template-columns: repeat(1, 1fr);
+        justify-items: start;
+    }
+
+    .top-blog-info {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .course-display {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 30px;
+    }
+
+}
+
+/* //end smartphone */
+
+/* for tablet devices */
+@media screen and (min-width:577px) and (max-width:991px) {
+    .container {
+        width: 90%;
+    }
+
+    .menu-bar{
+        display: none;
+    }
+    .top-players, .top-blogs{
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: start;
+    }
+
+    .top-blog-info {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+    .course-display {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+
+}
